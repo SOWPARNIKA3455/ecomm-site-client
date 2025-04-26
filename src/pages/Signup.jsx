@@ -18,7 +18,7 @@ export default function Signup() {
       return;
     }
     try {
-      await axios.post(`${API}/user`, form);
+      await axios.post(`${API}/signup`, form);
       navigate('/login');
     } catch (err) {
       console.error('Signup error:', err);
